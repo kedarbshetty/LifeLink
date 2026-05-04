@@ -1,0 +1,112 @@
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.campaign-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.camp-image {
+  position: relative;
+  height: 200px;
+}
+
+.camp-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camp-date-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--white);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.camp-date-badge .day {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.camp-date-badge .month {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.camp-body {
+  padding: 24px;
+}
+
+.camp-organizer {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.camp-body h3 {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+}
+
+.camp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.camp-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.camp-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.organize-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(to right, #FFF5F5, #FFFFFF);
+}
+
+.cta-text h2 {
+  margin-bottom: 8px;
+}
+
+.cta-text p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .organize-cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+}
